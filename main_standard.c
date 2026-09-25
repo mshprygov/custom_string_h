@@ -6,10 +6,10 @@
 #include <string.h>
 
 #include "globals.h"
+#include "main_logic.h"
 
 int main()
 {
-	printf("Your string is: %s\n",string_1);
-
+	main_logic();
 	return 0;
 }

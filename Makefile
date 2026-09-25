@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Wconversion -Werror
-COMMON = string.c globals.c
+COMMON = string.c globals.c main_logic.c
 
 binstan: $(COMMON) main_standard.c
 	$(CC) $(CFLAGS) $(COMMON) main_standard.c -o binstan
