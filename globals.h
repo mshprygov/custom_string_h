@@ -1,0 +1,11 @@
+#ifndef GLOBALS_H
+#define GLOBALS_H
+
+#define STRING_SIZE 512
+
+extern char string_1[STRING_SIZE];
+extern char string_2[STRING_SIZE];
+extern char string_3[STRING_SIZE];
+
+
+#endif
