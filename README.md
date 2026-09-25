@@ -4,8 +4,11 @@ This is a study project.
 
 ## Task:
 * Reimplement the standard functions from the `<string.h>`
-* Maintain two main files including standard or custom headers with similar functionality
-* Compile both main files to binaries that must result in identical behaviour
+* ~~Maintain two main files including standard or custom headers with similar functionality~~
+* ~~Compile both main files to binaries that must result in identical behaviour~~
+> Since GCC will not allow to use reserved names for the custom functions:
+* Selectively include the custom `"string.h"` header with the custom functiions
+* Maintain Makefile scenarios for using both the standard and the custom header 
 ## Additions:
 * Learn to arrange a complex project with external header/source files
 * Learn to maintain a Makefile
