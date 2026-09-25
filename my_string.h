@@ -6,7 +6,7 @@
 #ifndef MY_STRING_H
 #define MY_STRING_H
 
-int my_strlen(const char*);
+size_t my_strlen(const char*);
 
 
 #endif

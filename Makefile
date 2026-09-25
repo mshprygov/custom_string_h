@@ -1,12 +1,13 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Wconversion -Werror
-COMMON = string.c globals.c main_logic.c
+COMMON = main.c globals.c functions.c
+CUSTOM = my_string.c my_string_names.h
 
-binstan: $(COMMON) main_standard.c
-	$(CC) $(CFLAGS) $(COMMON) main_standard.c -o binstan
+binstan: $(COMMON)
+	$(CC) $(CFLAGS) $(COMMON) -o binstan
 
-bincust: $(COMMON) main_custom.c
-	$(CC) $(CFLAGS) $(COMMON) main_custom.c -o bincust
+bincust: $(COMMON) $(CUSTOM)
+	$(CC) $(CFLAGS) -DCUSTOM_LIB $(COMMON) $(CUSTOM) -o bincust
 
 clean:
 	rm -f bincust binstan

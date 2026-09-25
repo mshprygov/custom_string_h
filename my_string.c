@@ -7,8 +7,8 @@
 
 #include "my_string.h"
 
-int my_strlen(const char* string)
+size_t my_strlen(const char* string)
 {
-	printf("String: %s\n",string);
+	printf("DEBUG: String - %s\n",string);
 	return 42;
 }
