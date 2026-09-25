@@ -6,7 +6,7 @@ This is a study project.
 * Reimplement the standard functions from the `<string.h>`
 * ~~Maintain two main files including standard or custom headers with similar functionality~~
 * ~~Compile both main files to binaries that must result in identical behaviour~~
-  _Since GCC will not allow to use reserved names for the custom functions:_
+> &nbsp;&nbsp; _Since GCC will not allow to use reserved names for the custom functions:_
 * Selectively include the custom `"string.h"` header with the custom functions
 * Maintain Makefile scenarios for using both the standard and the custom header 
 ## Additions:
