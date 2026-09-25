@@ -9,6 +9,12 @@
 
 size_t my_strlen(const char* string)
 {
-	printf("DEBUG: String - %s\n",string);
-	return 42;
+	int count = 0;
+
+	while (string[count] != '\0' && string[count] != EOF)
+	{
+		count++;
+	}
+
+	return (size_t) count;
 }
