@@ -1,0 +1,3 @@
+/*
+	Use standard <string.h>
+*/
