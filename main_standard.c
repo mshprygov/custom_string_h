@@ -9,10 +9,7 @@
 
 int main()
 {
-//	printf("Enter a string: ");
-//	fgets(string_1,STRING_SIZE - 1,stdin);
-
-	printf("Your string: %s\n",string_1);
+	printf("Your string is: %s\n",string_1);
 
 	return 0;
 }
