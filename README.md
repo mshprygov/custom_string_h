@@ -4,6 +4,7 @@ This is a study project.
 
 ## Objective:
 * Reimplement the standard functions from the `<string.h>`
+* Raise flags for GCC to check conversion for the types to be precise
 * ~~Maintain two main files including standard or custom headers with similar functionality~~
 * ~~Compile both main files to binaries that must result in identical behaviour~~
 > &nbsp;&nbsp; _Since GCC will not allow to use reserved names for the custom functions:_

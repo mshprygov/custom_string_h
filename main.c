@@ -20,7 +20,7 @@ int main()
 {
 	/* Prompt user for the strings */
 
-	printf("\n# <string.h> - Custom functions implementation\n\n");
+	printf("\n# Custom implementation of <string.h> functions\n\n");
 
 	prompt_user("Enter a string");
 
@@ -40,20 +40,20 @@ int main()
 
 	/* Strlen() */
 
-	printf("\n# strlen() - Calculate string length\n\n");
+	printf("\n# strlen() - Return the length of a string\n\n");
 
 	printf("Your string is: %s\n",string_1);
 	printf("It's length is %zu characters.\n",strlen(string_1));
 
 	/* Strcat() */
 
-	printf("\n# strcat() - Concatenate two strings\n\n");
+	printf("\n# strcat() - Append one string to the end of another\n\n");
 
 	prompt_user("Enter a second string");
 
 	if (fgets(string_2,sizeof(string_2),stdin) == NULL)
 	{
-		prompt_error("Wrong error");
+		prompt_error("Wrong input");
 	}
 
 	if (string_2[strlen(string_2) - 1] == '\n')
@@ -76,6 +76,24 @@ int main()
 	{
 		prompt_error("Buffer too low");
 	}
+
+	/* Strchr() */
+
+	printf("\n# strchr() - Return a pointer to the first occurance of a character in a string\n\n");
+
+	prompt_user("Enter a character");
+
+	if (scanf("%c",&input_char) != 1)
+	{
+		prompt_error("Wrong input");
+	}
+	else
+	{
+		clear_buffer();
+	}
+
+	printf("The character \"%c\" is found at position %d.\n",
+	input_char,(int)(strlen(string_1) - strlen(strchr(string_1,input_char))) + 1);
 
 	/* End of program */
 
