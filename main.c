@@ -92,8 +92,16 @@ int main()
 		clear_buffer();
 	}
 
-	printf("The character \"%c\" is found at position %d.\n",
-	input_char,(int)(strlen(string_1) - strlen(strchr(string_1,input_char))) + 1);
+	if (strchr(string_1,input_char) == NULL)
+	{
+		printf("The character was not found in your string.\n");
+	}
+	else
+	{
+		printf("The character \"%c\" is found at position %d.\n",
+		input_char,(int)(strlen(string_1) -
+		strlen(strchr(string_1,input_char))) + 1);
+	}
 
 	/* End of program */
 

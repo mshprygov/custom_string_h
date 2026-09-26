@@ -40,3 +40,22 @@ char* my_strcat(char* destin, const char* source)
 
 	return destin;
 }
+
+char* my_strchr(const char* str, const int chr)
+{
+	int ptr = 0;
+
+	while (str[ptr] != '\0' && str[ptr] != EOF)
+	{
+		if (str[ptr] == chr)
+		{
+			// gcc won't let return char* because it would
+			// discard 'const' qualifier, hence the cast
+			return (char*)&str[ptr];
+		}
+
+		ptr++;
+	}
+
+	return NULL;
+}
