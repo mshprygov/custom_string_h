@@ -7,5 +7,6 @@
 #define MY_STRING_NAMES_H
 
 #define strlen(x) my_strlen(x)
+#define strcat(x,y) my_strcat(x,y)
 
 #endif

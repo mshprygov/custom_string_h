@@ -69,6 +69,8 @@ int main()
 	{
 		printf("Two strings together: %s\n",
 		strcat(string_1,string_2));
+		printf("Concatenated string's length is %zu.\n",
+		strlen(string_1));
 	}
 	else
 	{
