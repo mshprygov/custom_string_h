@@ -15,3 +15,7 @@ This is a study project.
 * Learn to maintain a Makefile
 * Train using Git commands
 * Learn to maintain a GitHub repo
+---
+## Notes:
+* The names of standard functions are reserved in **GCC**, so it will throw an error if you try to name your custom function same way, no matter if the corresponding header is included or not.
+* There is **Section 3 of manpages** that is dedicated to the standard C functions, so with a command like `man 3 strlen` you get a synopsis of such a function.
