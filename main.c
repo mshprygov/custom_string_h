@@ -20,7 +20,7 @@ int main()
 {
 	/* Prompt user for the strings */
 
-	printf("\n# Custom implementation of <string.h> functions\n\n");
+	printf("\n# Custom implementation of the <string.h> functions\n\n");
 
 	prompt_user("Enter a string");
 
@@ -43,7 +43,7 @@ int main()
 	printf("\n# strlen() - Return the length of a string\n\n");
 
 	printf("Your string is: %s\n",string_1);
-	printf("It's length is %zu characters.\n",strlen(string_1));
+	printf("Its length is %zu characters.\n",strlen(string_1));
 
 	/* Strcat() */
 
